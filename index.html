@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1>Artist Portfolio</h1>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my work and passion for art.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>My Artwork</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/imgs/1.jpg"Art 1" onclick="openModal('modal1')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/2.jpg" alt="Art 2" onclick="openModal('modal2')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/3.jpg" alt="Art 3" onclick="openModal('modal3')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/4.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/5.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/6.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/7.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/8.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/9.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>  
+            <div class="gallery-item">
+                <img src="/imgs/10.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/11.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/12.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/13.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/14.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/15.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/16.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/17.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/18.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/19.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+            <div class="gallery-item">
+                <img src="/imgs/20.jpg" alt="Art 4" onclick="openModal('modal4')">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Modals for Artwork -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="imgs/1.jpg"Art 1">
+            <h3>Title of Artwork 1</h3>
+            <p>Description of Artwork 1...</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="art2.jpg" alt="Art 2">
+            <h3>Title of Artwork 2</h3>
+            <p>Description of Artwork 2...</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="art3.jpg" alt="Art 3">
+            <h3>Title of Artwork 3</h3>
+            <p>Description of Artwork 3...</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img src="art4.jpg" alt="Art 4">
+            <h3>Title of Artwork 4</h3>
+            <p>Description of Artwork 4...</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Artist Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
